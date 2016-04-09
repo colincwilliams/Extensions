@@ -17,7 +17,7 @@
         public static T ParseEnum<T>(this string str, T defaultValue) where T : struct
         {
             T result;
-            if (str == null || !Enum.TryParse(str, out result) || !Enum.IsDefined(typeof(T), result))
+            if (!Enum.TryParse(str, out result) || !Enum.IsDefined(typeof(T), result))
             {
                 result = defaultValue;
             }
