@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\Extensions-Universal\DictionaryExtensions.cs" />
+    <Compile Include="..\Extensions-Universal\EnumerableExtensions.cs" />
     <Compile Include="..\Extensions-Universal\Extensions.cs" />
     <Compile Include="..\Extensions-Universal\Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -5,6 +5,7 @@
     using ColinCWilliams.Extensions;
     using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
     using System.Text;
+
     [TestClass]
     public class DictionaryExtensionsTests
     {

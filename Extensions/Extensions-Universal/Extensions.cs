@@ -56,5 +56,15 @@
                 throw new ArgumentNullException(argName);
             }
         }
+
+        /// <summary>
+        /// Gets the length of an object's ToString output while safely handling null objects.
+        /// </summary>
+        /// <param name="o">The object to get a the string length of.</param>
+        /// <returns>The length of the ToString() output of the object.</returns>
+        public static uint GetStringLength(this object o)
+        {
+            return o == null ? 0 : (uint)o.ToString().Length;
+        }
     }
 }
